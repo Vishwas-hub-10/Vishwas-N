@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery-item {
+      position: relative;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .description {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Photography Portfolio</h1>
+  <div class="gallery">
+    <!-- Gallery item 1 -->
+    <div class="gallery-item">
+      <a href="10(2).html">
+        <img src="naturelandscape.jpeg" alt="Nature Landscape">
+        <div class="description">Nature Landscape</div>
+      </a>
+    </div>
+    <!-- Gallery item 2 -->
+    <div class="gallery-item">
+      <a href="10(3).html">
+        <img src="cityskyline.jpeg" alt="City Skyline">
+        <div class="description">City Skyline</div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

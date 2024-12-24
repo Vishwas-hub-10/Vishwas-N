@@ -1,0 +1,28 @@
+/*basic styling for body*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 1px;
+    background-color: rgb(169, 152, 185);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blog-card{
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: beige;
+    box-shadow:0 4px 8px rgb(176, 172, 180);
+    transition: transform 0.3s ease, box shadow 0.3s ease;
+}
+
+.blog-image{
+    width: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    box-shadow:0 4px 8px rgb(153, 99, 99);
+}
+h3{
+    background-color: blueviolet;
+}

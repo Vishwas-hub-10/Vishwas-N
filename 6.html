@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .subsection {
+      margin-bottom: 15px;
+    }
+
+    .section h3 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form>
+      <!-- Demographics Section -->
+      <div class="section" id="demographics">
+        <h2>Demographics</h2>
+        <div class="row">
+          <div class="column">
+            <div class="subsection">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+            </div>
+          </div>
+          <div class="column">
+            <div class="subsection">
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interests Section -->
+      <div class="section" id="interests">
+        <h2>Interests</h2>
+        <div class="row">
+          <!-- Sports Subsection -->
+          <div class="column">
+            <div class="subsection" id="sports">
+              <h3>Sports</h3>
+              <label for="sports">Select your favorite sports:</label>
+              <select id="sports" name="sports">
+                <option value="soccer">Soccer</option>
+                <option value="basketball">Basketball</option>
+                <option value="tennis">Tennis</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Music Subsection -->
+          <div class="column">
+            <div class="subsection" id="music">
+              <h3>Music</h3>
+              <label for="music">Select your favorite genre:</label>
+              <select id="music" name="music">
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Technology Subsection -->
+          <div class="column">
+            <div class="subsection" id="technology">
+              <h3>Technology</h3>
+              <label for="technology">Select your tech interests:</label>
+              <input type="checkbox" id="ai" name="technology" value="AI"> AI<br>
+              <input type="checkbox" id="iot" name="technology" value="IoT"> IoT
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feedback Section -->
+      <div class="section" id="feedback">
+        <h2>Feedback</h2>
+        <div class="subsection">
+          <label for="feedback">Your feedback:</label>
+          <textarea id="feedback" name="feedback"></textarea>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
